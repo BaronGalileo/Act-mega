@@ -1,0 +1,32 @@
+.txt {
+    color: #e2c7c7;
+    font-family: "Regular", serif;
+    display: inline;
+    text-align: center;    
+}
+
+.red-text {
+    color: #EC3837;
+}
+
+.left {
+    text-align: start;
+    margin: 3px;
+    padding: 5px;
+  }
+
+.dark-color {
+    color: #000000;
+}
+
+.italic {
+    font-family: "Italic";
+}
+
+.italic-bold {
+    font-family: "Italic-Bold";
+}
+
+.bold {
+    font-family: "Bold";
+}
