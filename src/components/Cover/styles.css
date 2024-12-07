@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: space-between;
     background-image: url("../../images/Subtract.png");
-    background-position: bottom;
+    background-position: center bottom 40px;
     background-repeat: no-repeat;
     background-size: 100% auto;
     position: relative;
@@ -16,49 +16,55 @@
 
 .conteiner-images {
     position: absolute;
-    bottom: 5%;
+    bottom: 7%;
     width: 100%;
-    height: 70%;
+    height: 60%;
     position: relative;
     display: flex;
     justify-content: space-between; /* Разделяем изображения по левую и правую стороны */
     padding: 10px 20px; /* Немного отступов для удобства */
-    overflow: hidden;
+    overflow-y: visible;
+    /* overflow-y: hidden; */
   }
 
+  /* .conteyner-tree-blur {
+    width: 45vw;
+    height: auto;
+    position: relative;
+    display: flex;
+    padding: 20px;
+  } */
+
 /*деревья*/
-.left-tree-foreground {
+/* .left-tree-foreground {
     position: absolute;
     height: 100%;
-    top: -2%;            /* Отступ сверху 50% от высоты родителя */
-    left: 2%;           /* Отступ слева 50% от ширины родителя */
-    /* transform: translate(-50%, -50%); */
+    top: -2%;            
+    left: 2%;           
     z-index: 1; 
+} */
 
-
-}
-
-.left-tree-background {
+/* .left-tree-background {
     position: absolute;
     height: 100%;
     filter: blur(2px);
-    bottom: 10%;          /* Отступ от верхней части родителя */
+    bottom: 10%;         
     left: -10%;
-}
+} */
 
-.right-tree-foreground {
+/* .right-tree-foreground {
     position: absolute;
-    top: -2%;          /* Отступ от верхней части родителя */
+    top: -2%;          
     right: 2%;
     z-index: 1;  
 
-}
+} */
 
-.right-tree-background {
+/* .right-tree-background {
     position: absolute;
     height: 100%;
     filter: blur(2px);
-    bottom: 10%;          /* Отступ от верхней части родителя */
+    bottom: 10%;          
     right: -10%; 
 
-}
+} */

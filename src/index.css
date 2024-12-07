@@ -1,14 +1,22 @@
 
 @font-face {
-  font-family: "Regular";
+  font-family: "Bond";
   src: url("/public/fonts/Sunday-Regular.ttf");
   font-weight: 400;
   font-style: normal;
   font-display: swap;
 }
 
+@font-face {
+  font-family: "Regular";
+  src: url("/public/fonts/Comfortaa.ttf");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
 html, body {
-  width: 100%;         
+  width: 99%;         
   overflow-x: hidden;  
   margin: 0;           
   padding: 0;
@@ -29,13 +37,79 @@ html, body {
 }
 
 header, footer {
-  height: 5vw;
+  height: 4vw;
   border-radius: 15px;
-  background-color: #dda53c; 
+  background-color: #E8FA93; 
   color: white;           
   display: flex;          
   align-items: center;    
   justify-content: center;
 }
 
+a {
+  color: #000000;
+  font-family: "Regular", serif;
+  transition: transform 0.5s ease;
+}
+
+@media screen and (max-width: 1300px) {
+  .cards-book-wrapper { 
+    width: 33%;
+  }
+}
+
+
+@media screen and (max-width: 767px) {
+  .book-present-wrapper {
+    padding-bottom: 10%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .book-present-wrapper {
+    padding-bottom: 22%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 525px) {
+  .book-present-wrapper {
+    padding-bottom: 33%;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .book-present-wrapper {
+    padding-bottom: 57%;
+    justify-content: center;
+  }
+  .cube-slider {
+    height: 220px;
+    max-width: 100%;
+  }
+  .swiper {
+    width: 220px;
+    margin-left: -107px
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .cube-slider {
+    height: 200px;
+    max-width: 100%;
+  }
+  .cube-slider .cube-bottom p {
+    font-size: 9px;
+  }
+
+  .swiper {
+    width: 200px;
+  }
+
+  .cube-slider .cube-bottom {
+    max-height: 70px;
+  }
+}
 

@@ -85,10 +85,6 @@ function Login() {
         // })
     }
 
-    const show = () => {
-        console.log("user", isAuth)
-    }
-
 
     if(isAuth.isAuth) return <Navigate to="/"/>
     
@@ -101,7 +97,6 @@ function Login() {
                 <Input name="password" type="password" message="Обязательно заполнить!">Пароль:</Input>
                 <Button  disabled={!isValid}>Войти</Button>
             </form>
-            <Button onClick={show} >показать</Button>
         </div>
         </>
     )

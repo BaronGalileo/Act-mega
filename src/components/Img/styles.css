@@ -8,23 +8,32 @@
     height: 100%;           
     width: auto;           
     object-fit: contain;
-  }   
-
-
-  /*деревья*/
-  /* .left-tree-foreground {
-
-
   }
 
-  .left-tree-background {
-
+  .blur {
+    width: 45vw;
   }
 
-  .right-tree-foreground {
-
+  
+  .tree {
+    width: 45vw;
   }
 
-  .right-tree-background {
+  .rabbit-book {
+    width: 35vw;
+  }
 
-  } */
+  .baner {
+    width: 100%;
+    height: auto;
+    z-index: 0;
+  }
+
+  .cardsBook-img {
+    width: 170px;
+    height: auto;
+    position: relative;;
+    transform: rotate(-20deg);
+  }
+
+

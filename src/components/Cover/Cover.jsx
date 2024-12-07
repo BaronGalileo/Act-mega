@@ -2,7 +2,7 @@ import React from "react";
 import { Button } from "../Button/Button";
 import { Img } from "../Img/Img";
 import { Text } from "../Text/Text";
-// import { motion } from 'framer-motion';
+import { motion } from 'framer-motion';
 import './styles.css';
 import { BallonButton } from "../Button/BallonButton";
 
@@ -11,14 +11,86 @@ export const Cover = () => {
 
     return(
         <div className="cover-wrapper">
-            <Text className="red-text" as="h1">Самая удивительная книга c объёмными картинками</Text>
+            <Text className="red-text bond" as="h1">Самая удивительная книга c объёмными картинками</Text>
             <BallonButton>Погрузись</BallonButton>
 
             <div className="conteiner-images">
-                <Img className="left-tree-foreground" src="../images/дерево 1 л.png"/>
-                <Img className="left-tree-background" src="../images/дерево 1 л.png"/>
-                <Img className="right-tree-foreground" src="../images/дерево 1 п.png"/>
-                <Img className="right-tree-background" src="../images/дерево 1 п.png"/>
+                <motion.div
+                style={{
+                position: 'absolute',  
+                top: '2%',                  
+                left: '32%',                
+                width: 'auto',               
+                height: 'auto',              
+                zIndex: 2,
+                overflowY: 'visible',         
+                }}
+                initial={{ y: '100%',
+                    opacity: 0, 
+                    scale: 0 }}            
+                animate={{ y: '0%',
+                    opacity: 1, 
+                    scale: 1,
+                 }}         
+                transition={{ duration: 3 }}>
+                    <Img className="rabbit-book" src="../images/книга+буратино+кролик.png"/>
+                </motion.div>
+                <motion.div
+                style={{
+                position: 'absolute',  
+                bottom: '1%',            
+                left: '2%',
+                zIndex: 1,
+                overflowY: 'visible',         
+                }}
+                initial={{ x: '20%' }}            
+                animate={{ x: '0%' }}         
+                transition={{ duration: 3 }}>
+                    <Img className="tree" src="../images/дерево 1 л.png"/>
+                </motion.div>
+                <motion.div
+                style={{
+                position: 'absolute',  
+                bottom: '4%',            
+                left: '-10%',
+                filter: 'blur(2px)',
+                zIndex: 0,          
+                }}
+                initial={{ x: '20%' }}            
+                animate={{ x: '0%' }}         
+                transition={{ duration: 2 }}
+                >
+                    <Img className="tree" src="../images/дерево 1 л.png"/>
+                </motion.div>
+                <motion.div
+                style={{
+                position: 'absolute', 
+                bottom: '1%',            
+                right: '2%',
+                zIndex: 1,          
+                }}
+                initial={{ x: '-20%' }}            
+                animate={{ x: '0%' }}         
+                transition={{ duration: 2 }}>
+                    <Img className="tree" src="../images/дерево 1 п.png"/>
+                </motion.div>
+                <motion.div
+                style={{
+                position: 'absolute',  
+                bottom: '4%',            
+                right: '0%',
+                filter: 'blur(2px)',
+                zIndex: 0,
+                overflowX: 'hidden',           
+                overflowY: 'visible',          
+                }}
+                initial={{ x: '-20%' }}            
+                animate={{ x: '0%' }}         
+                transition={{ duration: 3 }} 
+                >
+                    <Img className="blur" src="../images/дерево d.png"/>
+                </motion.div>
+
             </div>
 
 

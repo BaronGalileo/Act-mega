@@ -1,8 +1,14 @@
 .txt {
-    color: #e2c7c7;
+    color: #000000;
     font-family: "Regular", serif;
     display: inline;
-    text-align: center;    
+    text-align: center;
+    padding: 2px;
+    margin: 2px;    
+}
+
+.bond {
+   font-family: "Bond"; 
 }
 
 .red-text {
@@ -29,4 +35,8 @@
 
 .bold {
     font-family: "Bold";
+}
+
+.book-text {
+    font-size: 14px;
 }

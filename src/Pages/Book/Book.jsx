@@ -3,6 +3,13 @@ import "./styles.css"
 import { useSelector } from "react-redux";
 import { Cover } from "../../components/Cover/Cover";
 import { BookPresentation } from "../../components/BookPresentation/BookPresentation"
+import { Reviews } from "../../components/Reviews/Reviews";
+import { Slider } from "../../components/Slider/Slider";
+
+import { TestSlider} from '../../components/Test/TestSlider'
+import { AdminPanel } from "../../components/AdminPanel/AdminPanel";
+import { CardsBook } from "../../components/CardsBook/CardsBook";
+import { Catalog } from "../../components/Catalog/Catalog";
 
 
 export const Book = () => {
@@ -18,13 +25,13 @@ export const Book = () => {
                <BookPresentation/> 
             </div>
             <div className="item" >
-                3D-книга
+                {/* <Slider/> */}
             </div>
             <div className="item" >
-                Отзывы
+                {/* <Reviews/> */}
             </div>
             <div className="item" >
-                Каталог
+                <Catalog/>
             </div>
             <div className="item" >
                 Оглавление
@@ -32,6 +39,7 @@ export const Book = () => {
             {isAuth.isAuth && 
             <div className="item" >
                 Админ страница
+                <AdminPanel/>
             </div>}
         </div>
     )

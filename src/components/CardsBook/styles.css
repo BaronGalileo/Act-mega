@@ -1,0 +1,48 @@
+/* .cards-book-wrapper {
+    width: 150px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    background-color: #E1FA8E;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);    
+    justify-content: center;
+    align-items: center;
+} */
+
+.cards-book-wrapper {
+    width: 27%;
+    height: 200px;
+    margin: 5px; /* Отступы между блоками */
+    display: flex;
+    flex-direction: column;
+    background-color: #E1FA8E;
+    border-radius: 20px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);    
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box; /* Чтобы padding не увеличивал общий размер блока */
+}
+
+.cards-book-element {
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+
+}
+
+.cards-book-element:nth-child(1) {
+    position: relative;
+    width: 95%;
+    overflow: hidden;
+    border-radius: 20px;
+    background-color: #FFFFFF;
+}
+
+/* .cards-book-element:nth-child(2) {
+    border-radius: 20px;
+    padding: 5px;
+    background-color: blanchedalmond;
+} */
