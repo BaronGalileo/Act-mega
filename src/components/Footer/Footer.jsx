@@ -6,13 +6,13 @@ import { Img } from '../Img/Img';
 export const Footer = () => {
     return(
             <div className='footer-wrapper'>
-                <a  href="#top">
+                <a  href="https://ast.ru/">
                     <Img className="img-link" src="../../images/teleg.png" alt="Описание картинки"/>
                 </a>
-                <a href="#top">
+                <a href="https://ast.ru/">
                     <Img className="img-link" src="../../images/youtube.png" alt="Описание картинки"/>
                 </a>
-                <a href="#top">
+                <a href="https://ast.ru/">
                     <Img className="img-link" src="../../images/vk.png" alt="Описание картинки"/>
                 </a>
             </div>

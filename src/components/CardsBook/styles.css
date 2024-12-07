@@ -11,8 +11,8 @@
 } */
 
 .cards-book-wrapper {
-    width: 27%;
-    height: 200px;
+    width: 200px;
+    height: 250px;
     margin: 5px; /* Отступы между блоками */
     display: flex;
     flex-direction: column;

@@ -22,16 +22,16 @@ export const Button = ({children = 'Default button', onClick =() => {}, classNam
             )
 
 
-    const Tag = restProps.href ? 'a' : 'button';
+    // const Tag = restProps.href ? 'a' : 'button';
 
     return(
         <div className="glass-btn glass-btn-green">
-        <Tag
+        <button
             {...restProps}
             // className={classes}
             disabled={disabled}
             onClick={onClikAction}
-            >{children}</Tag>
+            >{children}</button>
         </div>
     );
 };

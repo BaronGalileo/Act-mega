@@ -6,7 +6,7 @@ import 'swiper/css/effect-cube';
 import './CubeSlider.css';
 import { Img } from '../Img/Img';
 import { Text } from '../Text/Text';
-import { Button } from '../Button/Button';
+import { Button } from "../Button/Button";
 
 
 export const CubeSlider = () => {
@@ -29,7 +29,7 @@ export const CubeSlider = () => {
         cubeEffect={{
           shadow: true, // Включаем тень для куба
           slideShadows: true, // Включаем тени на слайде
-          shadowOffset: 45, // Отступ тени
+          shadowOffset: 33, // Отступ тени
           shadowScale: 1, // Масштаб тени
         }}
         lazy={true}
@@ -40,7 +40,8 @@ export const CubeSlider = () => {
             <Img src="../images/разворотАлиса (1).png" alt="photo" />
             <div className="cube-top">1</div>
             <div className="cube-bottom">
-              <p>Описание слайда</p>
+              <Text>Описание книги</Text>
+              <Button href="https://ast.ru/" clear className="btn">Хочу</Button>
             </div>
           </div>
         </SwiperSlide>
@@ -51,18 +52,18 @@ export const CubeSlider = () => {
             <div className="cube-top">2</div>
             <div className="cube-bottom">
               <Text>Описание книги, там тарам!</Text>
-              <Button className="glass-btn-green">Хочу</Button>
+              <Button href="https://ast.ru/" clear className="btn">Хочу</Button>
             </div>
           </div>
         </SwiperSlide>
 
         <SwiperSlide>
           <div className="cube-slider">
-            <Img src="../images/разворотАлисаВ зазер.png" alt="photo" />
+            <Img src="../images/разворотАлисаВ зазер (1).png" alt="photo" />
             <div className="cube-top">3</div>
             <div className="cube-bottom">
               <Text>Ветер в ивах это увлекательные приключения братцев бурундуков в Америке. Красочные картинки и веселые истории не оставят ровнодушным никого</Text>
-              {/* <Button className="glass-btn-green" href>Хочу</Button> */}
+              <Button href="https://ast.ru/" clear className="btn">Хочу</Button>
             </div>
           </div>
         </SwiperSlide>

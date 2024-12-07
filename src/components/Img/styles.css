@@ -20,7 +20,7 @@
   }
 
   .rabbit-book {
-    width: 35vw;
+    width: 32vw;
   }
 
   .baner {
@@ -30,10 +30,11 @@
   }
 
   .cardsBook-img {
-    width: 170px;
+    width: 200px;
     height: auto;
-    position: relative;;
+    position: relative;
     transform: rotate(-20deg);
+    left: 15px;
   }
 
 

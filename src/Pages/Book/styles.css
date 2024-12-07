@@ -1,12 +1,12 @@
 .book {
-    height: 90vh;  /* Высота экрана */
+    height: 90vh;
     overflow-y: scroll;
     scroll-snap-type: y mandatory; /* Обязательное "прилипание" к секциям при скролле */
 }
   
 
 .item {
-    height: 90vh;  
+    height: 90vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -16,11 +16,11 @@
 }
 
 
-.left {
+/* .left {
     width: 80vw;
     display: flex;
     justify-content: flex-start;
-}
+} */
 
 .center {
     text-align: center;
