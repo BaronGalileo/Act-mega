@@ -11,11 +11,12 @@ export const CardsBook = ({src='', link="", title="", contex="" }) => {
         <div className="cards-book-wrapper">
             <div className="cards-book-element">
                 <Img className="cardsBook-img" src={src}/>
+                <div className="umbrella"></div>
             </div>
-            <div className="cards-book-element">
+            <div className="cards-book-element ">
                 <Text className="bond">{title}</Text>
                 <Text className="book-text">{contex}</Text>
-                <BallonButton href={link} clean className="candy-balloon">Кнопка</BallonButton>
+                <BallonButton href={link} clean className="candy-balloon">Хочу</BallonButton>
             </div>
         </div>
     )

@@ -1,0 +1,48 @@
+.team-of-wizards-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.team-of-wizards-element {
+    width: 100%;
+    /* height: 22%; */
+    display: flex;
+    /* justify-content: center;  */
+    /* align-items: center;   
+    text-align: center; */
+}
+
+.mirrored-team-of-wizards-element {
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+
+.text-bolus-wizard {
+    width: 90%;
+    height: 100%;
+    background-image: url("../../../public/images/шарик волшебника л.png");
+    background-position: left center;
+    background-repeat: no-repeat;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    background-size: 112% 119%;
+}
+
+.text-bolus-wizard-right {
+    width: 90%;
+    height: 100%;
+    background-image: url("../../../public/images/шарик волшебника п.png");
+    background-position: right center;
+    background-repeat: no-repeat;
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    background-size: 112% 122%;
+}

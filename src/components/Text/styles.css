@@ -40,3 +40,34 @@
 .book-text {
     font-size: 14px;
 }
+
+.title-reviews {
+    position: absolute;
+    top: 25%;
+    width: 50%;
+    font-family: 'Bond';
+    color: #FFFFFF;
+}
+
+.txt-bolus {
+    width: 80%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+}
+
+.epilogue-txt {
+    display: flex;
+    width: 60%;
+    height: auto;
+}
+
+.txt-footer {
+    position: absolute;
+    bottom:15vw;
+    width: 60%;
+    z-index: 0;
+}

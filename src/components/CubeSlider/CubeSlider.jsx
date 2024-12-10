@@ -14,8 +14,6 @@ export const CubeSlider = () => {
 
   return (
     <div className="cube-wrapper">
-      {/* <video autoPlay loop muted src="/video/Ветер в ивах видео.mp4">
-      </video> */}
       <Swiper
         className="cube-slider swiper"
         effect={"cube"} // Включаем 3D-куб эффект

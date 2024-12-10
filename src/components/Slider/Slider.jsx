@@ -1,35 +1,40 @@
-import { Navigation, Pagination, Scrollbar, A11y } from 'swiper/modules';
-
-import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
-import 'swiper/css/scrollbar';
+import React, { useState } from 'react';
+import './styles.css'
+import { TextInBall } from '../TextInBall/TextInBall';
+import { Img } from '../Img/Img';
 
 export const Slider = () => {
-  return (
-    <Swiper
-      // install Swiper modules
-      modules={[Navigation, Pagination, Scrollbar, A11y]}
-      spaceBetween={50}
-      slidesPerView={3}
-      navigation
-      pagination={{ clickable: true }}
-      scrollbar={{ draggable: true }}
-      onSwiper={(swiper) => console.log(swiper)}
-      onSlideChange={() => console.log('slide change')}
-    >
-      <SwiperSlide>Slide 1</SwiperSlide>
-      <SwiperSlide>Slide 2</SwiperSlide>
-      <SwiperSlide>Slide 3</SwiperSlide>
-      <SwiperSlide>Slide 4</SwiperSlide>
-      <span slot="container-start">Container Start</span>
-      <span slot="container-end">Container End</span>
-      <span slot="wrapper-start">Wrapper Start</span>
-      <span slot="wrapper-end">Wrapper End</span>
-      ...
-    </Swiper>
-  );
+    const slides = [
+        'Отзывы покупателей. трям трям, тили мили трямдия!!!',
+        'kjghasdlhkadh;kashd',
+        'asdqpojjlllmc',
+        'wqqwdl;lk',
+    ];
+
+    const [currentSlide, setCurrentSlide] = useState(0);
+
+    const nextSlide = () => {
+        setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+    };
+
+    const prevSlide = () => {
+        setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
+    };
+
+    return (
+        <div className="slider-reviews-wrapper">
+            <TextInBall text={slides[currentSlide]}/>
+            <button className='btn-reviews-slider left'
+                onClick={prevSlide}
+            >
+                <Img src='../images/кнопка л.png'/>
+            </button>
+            <button className='btn-reviews-slider right'
+                onClick={nextSlide}
+            >
+                <Img src='../images/кнопка п.png'/>
+            </button>
+        </div>
+
+    );
 };

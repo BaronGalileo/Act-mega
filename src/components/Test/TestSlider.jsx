@@ -1,52 +1,65 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
-import { Swiper, SwiperSlide } from 'swiper/react';
+// import React, { useState } from 'react';
+// import './styles.css'
+// import { TextInBall } from '../TextInBall/TextInBall';
+// import { Img } from '../Img/Img';
 
-// Import Swiper styles
-import 'swiper/css';
-import 'swiper/css/effect-cube';
-import 'swiper/css/pagination';
+// export const Slider = () => {
+//     const slides = [
+//         'Отзывы покупателей. трям трям, тили мили трямдия!!!',
+//         'kjghasdlhkadh;kashd',
+//         'asdqpojjlllmc',
+//         'wqqwdl;lk',
+//     ];
 
-import './styles.css';
+//     const [currentSlide, setCurrentSlide] = useState(0);
 
-// import required modules
-import { EffectCube, Pagination } from 'swiper/modules';
+//     const nextSlide = () => {
+//         setCurrentSlide((prevSlide) => (prevSlide + 1) % slides.length);
+//     };
 
-export const TestSlider = () => {
-  return (
-    <div className='div-wrapper'>
-      <Swiper
-        effect={'cube'}
-        grabCursor={true}
-        loop={true} // Зацикливание слайдера
-        speed={2000} // Скорость перехода между слайдами
-        autoplay={{
-          delay: 2600, // Задержка перед переходом к следующему слайду
-          pauseOnMouseEnter: true, // Приостановить автопрокрутку на паузе при наведении
-        }}
-        cubeEffect={{
-          shadow: true,
-          slideShadows: true,
-          shadowOffset: 20,
-          shadowScale: 0.94,
-        }}
-        pagination={true}
-        modules={[EffectCube, Pagination]}
-        className="mySwiper"
-      >
-        <SwiperSlide>
-          <img src="../images/разворотАлиса.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="../images/разворотАлисаВ зазер.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="../images/ВетерВИвах.png" />
-        </SwiperSlide>
-        <SwiperSlide>
-          <img src="../images/разворотАлиса.png" />
-        </SwiperSlide>
-      </Swiper>
-    </div>
-  );
-}
+//     const prevSlide = () => {
+//         setCurrentSlide((prevSlide) => (prevSlide - 1 + slides.length) % slides.length);
+//     };
+
+//     return (
+//         <div className="slider-reviews-wrapper">
+//             <TextInBall text={slides[currentSlide]}/>
+//             {/* <img
+//                 src={slides[currentSlide]}
+//                 alt={`Slide ${currentSlide + 1}`}
+//                 style={{ width: '100%', transition: 'transform 0.5s ease-in-out' }}
+//             /> */}
+//             <button className='btn-reviews-slider'
+//                 onClick={prevSlide}
+//                 // style={{
+//                 //     position: 'absolute',
+//                 //     top: '50%',
+//                 //     left: '10px',
+//                 //     transform: 'translateY(-50%)',
+//                 //     backgroundColor: 'rgba(0, 0, 0, 0.5)',
+//                 //     color: 'white',
+//                 //     border: 'none',
+//                 //     padding: '10px',
+//                 // }}
+//             >
+//                 Prev
+//             </button>
+//             <button
+//                 onClick={nextSlide}
+//                 style={{
+//                     position: 'absolute',
+//                     top: '50%',
+//                     right: '10px',
+//                     transform: 'translateY(-50%)',
+//                     backgroundColor: 'rgba(0, 0, 0, 0.5)',
+//                     color: 'white',
+//                     border: 'none',
+//                     padding: '10px',
+//                 }}
+//             >
+//                 <Img src='../images/кнопка п.png'/>
+//             </button>
+//         </div>
+
+//     );
+// };

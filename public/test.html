@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        .tree-container {
+            display: inline-block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .tree-image {
+            transition: transform 0.2s ease-in-out;
+        }
+
+        .tree-container:hover .tree-image {
+            animation: sway 0.5s ease-in-out infinite;
+        }
+
+        @keyframes sway {
+            0% {
+                transform: rotate(0deg);
+            }
+            25% {
+                transform: rotate(2deg);
+            }
+            50% {
+                transform: rotate(0deg);
+            }
+            75% {
+                transform: rotate(-2deg);
+            }
+            100% {
+                transform: rotate(0deg);
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="tree-container">
+    <img src="./images/дерево 1 л.png" alt="Дерево" class="tree-image">
+</div>
+
+</body>

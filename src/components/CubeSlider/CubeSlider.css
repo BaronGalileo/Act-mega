@@ -95,11 +95,9 @@
     bottom: 0;
     width: 100%;
     min-height: 70px;
-    /* padding: 10px 20px; */
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
-    color: #fff;
     z-index: 2;
   }
   
@@ -119,7 +117,6 @@
   /* Стиль для ссылок внизу слайда */
   .cube-slider .cube-bottom a {
     position: relative;
-    color: #fff;
     text-decoration: none;
   }
   

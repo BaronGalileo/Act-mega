@@ -10,6 +10,8 @@ import { TestSlider} from '../../components/Test/TestSlider'
 import { AdminPanel } from "../../components/AdminPanel/AdminPanel";
 import { CardsBook } from "../../components/CardsBook/CardsBook";
 import { Catalog } from "../../components/Catalog/Catalog";
+import { TeamOfWizards } from "../../components/TeamOfWizards/TeamOfWizards";
+import { Epilogue } from "../../components/Epilogue/Epilogue";
 
 
 export const Book = () => {
@@ -18,29 +20,32 @@ export const Book = () => {
 
     return(
         <div className="book">
-            <div className="item" >
+            {isAuth.isAuth && 
+            <div className="item item-admin" >
+                <AdminPanel/>
+            </div>}
+            <div className="item cover" >
                 <Cover/>
             </div>
-            <div className="item" >
+            <div className="item bookPresentation" >
                <BookPresentation/> 
             </div>
             <div className="item" >
                 {/* <Slider/> */}
             </div>
             <div className="item" >
-                {/* <Reviews/> */}
+                <Reviews/>
             </div>
-            <div className="item" >
+            <div className="item-catalog" >
                 <Catalog/>
             </div>
             <div className="item" >
-                Оглавление
+                <TeamOfWizards/>
+                
             </div>
-            {isAuth.isAuth && 
             <div className="item" >
-                Админ страница
-                <AdminPanel/>
-            </div>}
+                <Epilogue/>
+            </div>
         </div>
     )
 }

@@ -12,7 +12,7 @@ export const Cover = () => {
     return(
         <div className="cover-wrapper">
             <Text className="red-text bond" as="h1">Самая удивительная книга c объёмными картинками</Text>
-            <BallonButton href="https://ast.ru/">Погрузись</BallonButton>
+            <BallonButton href="https://ast.ru/series/samaya-udivitelnaya-kniga-s-obemnymi-kartinkami-7e485f/?SORT=NEW_SORT&SORT_BY=DESC">Погрузись в чудо</BallonButton>
 
             <div className="conteiner-images">
                 <motion.div
@@ -46,7 +46,7 @@ export const Cover = () => {
                 initial={{ x: '20%' }}            
                 animate={{ x: '0%' }}         
                 transition={{ duration: 3 }}>
-                    <Img className="tree" src="../images/дерево 1 л.png"/>
+                    <Img className="tree one" src="../images/дерево 1 л.png"/>
                 </motion.div>
                 <motion.div
                 style={{
@@ -60,7 +60,7 @@ export const Cover = () => {
                 animate={{ x: '0%' }}         
                 transition={{ duration: 2 }}
                 >
-                    <Img className="tree" src="../images/дерево 1 л.png"/>
+                    <Img className="tree two" src="../images/дерево 1 л.png"/>
                 </motion.div>
                 <motion.div
                 style={{
@@ -72,7 +72,7 @@ export const Cover = () => {
                 initial={{ x: '-20%' }}            
                 animate={{ x: '0%' }}         
                 transition={{ duration: 2 }}>
-                    <Img className="tree" src="../images/дерево 1 п.png"/>
+                    <Img className="tree three" src="../images/дерево 1 п.png"/>
                 </motion.div>
                 <motion.div
                 style={{
@@ -88,7 +88,7 @@ export const Cover = () => {
                 animate={{ x: '0%' }}         
                 transition={{ duration: 3 }} 
                 >
-                    <Img className="blur" src="../images/дерево d.png"/>
+                    <Img className="blur four" src="../images/дерево d.png"/>
                 </motion.div>
 
             </div>
