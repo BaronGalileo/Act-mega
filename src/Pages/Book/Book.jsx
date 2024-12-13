@@ -31,7 +31,8 @@ export const Book = () => {
                <BookPresentation/> 
             </div>
             <div className="item" >
-                {/* <Slider/> */}
+                <TestSlider/>
+                
             </div>
             <div className="item" >
                 <Reviews/>

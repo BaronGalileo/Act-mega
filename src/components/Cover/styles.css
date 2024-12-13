@@ -6,35 +6,57 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
     background-image: url("../../images/Subtract.png");
-    background-position: center bottom 10px;
+    background-position: center bottom -34px;
     background-repeat: no-repeat;
     background-size: 100% auto;
     position: relative;
 }
 
-.conteiner-images {
-    bottom: 7%;
+.conteiners-images {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 50%;
+    display: flex;
+    overflow-y: visible;
+}
+
+.conteiner-image {
+    bottom: -15%;
     width: 100%;
     height: 60%;
     position: relative;
     display: flex;
     justify-content: space-between; 
-    padding: 10px 20px; 
     overflow-y: visible;
   }
 
+.conteiner-image:nth-child(1) {
+    right: 1%;
+    background-color: transparent;
+}
 
-.one, .two, .three, .four {
+.conteiner-image:nth-child(2) {
+    right: 13%;
+    background-color: transparent;
+}
+
+.conteiner-image:nth-child(4) {
+    right: 7%;
+}
+.conteiner-image:nth-child(5) {
+    right: 20%;
+}
+
+
+.tree {
     transition: transform 0.2s ease-in-out;
 }
 
-.conteiner-images:hover .one,
-.conteiner-images:hover .two,
-.conteiner-images:hover .three,
-.conteiner-images:hover .four {
-    animation: sway 0.5s ease-in-out infinite;
+.conteiner-image:hover .tree {
+    animation: sway 0.4s ease-in-out infinite;
+    pointer-events: none;
 }
 
 @keyframes sway {
@@ -42,13 +64,13 @@
         transform: rotate(0deg);
     }
     10% {
-        transform: rotate(1deg);
+        transform: rotate(0.1deg);
     }
     25% {
-        transform: rotate(2deg);
+        transform: rotate(0.2deg);
     }
     35% {
-        transform: rotate(1deg);
+        transform: rotate(0.1deg);
     }
     50% {
         transform: rotate(0deg);
@@ -57,7 +79,7 @@
         transform: rotate(1deg);
     }
     75% {
-        transform: rotate(-2deg);
+        transform: rotate(-0.8deg);
     }
     100% {
         transform: rotate(0deg);

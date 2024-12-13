@@ -5,18 +5,23 @@
   
   .cube-wrapper {
     position: relative;
-    perspective: 1200px; /* Перспектива для 3D-эффекта */
+    display: flex;
+    align-items: center;
+    perspective: 1000px; /* Перспектива для 3D-эффекта */
     width: 100%;
+    border-radius: 20px;
     height: 100%;  
     z-Index: 1;
   }
   
   .cube-slider {
     position: relative;
-    height: 300px;
-    width: 300px;
+    background: transparent;
+    height: 450px;
+    width: 450px;
     display: flex;
     justify-content: center;
+    border-radius: 20px;
     align-items: center;
   }
   
@@ -34,10 +39,12 @@
     user-select: none;
     aspect-ratio: 1 / 1;
     transform-style: preserve-3d;
-    background-color: rgba(232, 250, 147, 0.5);
+    /* background-color: rgba(249, 250, 244, 0.1); */
     display: flex;
     justify-content: center;
     align-items: center;
+    border-radius: 20px;
+    box-shadow: inset 0px 8px 20px rgb(240, 124, 123, 0.5);
   }
   
   .cube-slider .swiper-slide img {
@@ -49,6 +56,7 @@
     display: block;
     backface-visibility: hidden;
     border-radius: 20px;
+    box-shadow: 0px 8px 20px rgb(240, 124, 123, 0.5);
   }
   
   /* .cube-wrapper video {
@@ -98,6 +106,7 @@
     background: rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     border-top: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0 0 20px 20px;
     z-index: 2;
   }
   

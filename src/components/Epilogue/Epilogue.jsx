@@ -15,7 +15,7 @@ export const Epilogue = () => {
                 участником событий и получить ни с чем не сравнимые эмоции</Text>
             <BallonButton href="https://ast.ru/series/samaya-udivitelnaya-kniga-s-obemnymi-kartinkami-7e485f/?SORT=NEW_SORT&SORT_BY=DESC" clean className="mirrored-balloon-button">Выбрать книгу</BallonButton>
             <Img className="malvina" src="../images/мальвина.png"></Img>
-            <Text as="h1" className="bond red-text txt-footer">Подари книгу - подари волшебство</Text>
+            <Text as="h1" className="bond red-text txt-footer">ПОДАРИ КНИГУ — ПОДАРИ ВОЛШЕБСТВО</Text>
             <Img className="present" src="../images/подарки.png"/>
         </div>
     )

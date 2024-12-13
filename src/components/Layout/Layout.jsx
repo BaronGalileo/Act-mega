@@ -12,7 +12,25 @@ import { Outlet } from "react-router-dom";
 
 
 export const Layout = () => {
-    
+
+    const handleMouseEnter = () => {
+        let element = document.querySelector('.book');
+        console.log("element", element)
+        if (element) {
+            element.style.height = '85vh'; 
+          }
+
+    }
+
+    const handleMouseLeave = () => {
+        let element = document.querySelector('.book');
+        console.log("element", element)
+        if (element) {
+            element.style.height = '90vh'; 
+          }
+        
+    }
+
     return (
         <div className="page">
             <header> 
@@ -21,7 +39,9 @@ export const Layout = () => {
             <main>
                 <Outlet/>            
             </main>
-            <footer>
+            <footer
+                onMouseEnter={handleMouseEnter}
+                onMouseLeave={handleMouseLeave}>
                 <Footer/>
             </footer>
         </div>

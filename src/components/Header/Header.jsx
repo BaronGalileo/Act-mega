@@ -27,15 +27,6 @@ export const Header = () => {
                 <Img className="logo" src="../images/Лого Поп ап-01 1.png"/>
             </div>
             <Img className="logo" src="../images/Лого Поп ап-01 1.png"/>
-        {/* <Button onClick={del}>Выйти из АДМИНА</Button> */}
         </div>
-            // <div className='header-wrapper'>
-            //     <div className='header-cap'>
-            //         <Button onClick={del}>Выйти из АДМИНА</Button>
-            //         <Img className="logo" src="../images/image 3.png"/>
-            //         <Img className="logo" src="../images/Лого Поп ап-01 1.png"/>
-            //         <Text as='h1'>Электронная сервисная книжка "Мой Силант"</Text>                 
-            //     </div>
-            // </div>
     )
 }

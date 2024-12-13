@@ -9,7 +9,7 @@ export const Catalog = () => {
 
     const [isOpen, setIsOpen] = useState(false);
     const contentRef = useRef(null); 
-    const [contentHeight, setContentHeight] = useState(412); 
+    const [contentHeight, setContentHeight] = useState(700); 
 
   useEffect(() => {
     if (contentRef.current) {
@@ -20,7 +20,7 @@ export const Catalog = () => {
   const toggleContent = () => {
     const show = document.querySelector(".item-catalog");
     if(!isOpen) {
-        show.style.height=`${contentHeight + 200}px`
+        show.style.height=`${contentHeight + 300}px`
     }
     else show.style.height=`${90}vh`
     setIsOpen(!isOpen);
@@ -28,18 +28,25 @@ export const Catalog = () => {
 
     return(
         <div className="catalog-wrapper">
-            <Text as='h1'className="red-text bond">Каталог</Text>
+            <Text className="red-text bond for-h1">Каталог</Text>
             <div className="catalog-element" ref={contentRef}
             style={{
-                height: isOpen ? `${contentHeight}px` : "412px",
+                height: isOpen ? `${contentHeight}px` : "700px",
                 overflow: "hidden",
-                transition: "height 0.3s ease",
+                transition: "height 0.2s ease",
               }}>
                 <CardsBook link="https://ast.ru/" src="../images/Обложки/Алиса в зазеркаье.jpg" title="Название Книги" contex="hgsajhdgasgclkjsbckjqgsjkcjbkjbcs;lkjbs;clkbc"/>
+                <CardsBook link="https://ast.ru/" src="../images/Обложки/12 месяцев.jpg" title="Название Книги" contex="Описание книги"/>
+                <CardsBook link="https://ast.ru/" src="../images/Обложки/Волшебник изум.jpg" title="Название Книги" contex="Описание книги"/>
+                <CardsBook link="https://ast.ru/" src="../images/Обложки/Все о кролике.jpg" title="Название Книги" contex="Описание книги"/>
                 <CardsBook link="https://ast.ru/" src="../images/Обложки/Алиса в зазеркаье.jpg" title="Название Книги" contex="Описание книги"/>
-                <CardsBook link="https://ast.ru/" src="../images/Обложки/Алиса в зазеркаье.jpg" title="Название Книги" contex="Описание книги"/>
-                <CardsBook link="https://ast.ru/" src="../images/Обложки/Алиса в зазеркаье.jpg" title="Название Книги" contex="Описание книги"/>
-                <CardsBook link="https://ast.ru/" src="../images/Обложки/Алиса в зазеркаье.jpg" title="Название Книги" contex="Описание книги"/>
+                <CardsBook link="https://ast.ru/" src="../images/Обложки/Алиса в зазеркаье.jpg" title="Название Книги" contex="hgsajhdgasgclkjsbckjqgsjkcjbkjbcs;lkjbs;clkbc"/>
+                <CardsBook link="https://ast.ru/" src="../images/Обложки/Алиса в зазеркаье.jpg" title="Название Книги" contex="hgsajhdgasgclkjsbckjqgsjkcjbkjbcs;lkjbs;clkbc"/>
+                <CardsBook link="https://ast.ru/" src="../images/Обложки/Алиса в зазеркаье.jpg" title="Название Книги" contex="hgsajhdgasgclkjsbckjqgsjkcjbkjbcs;lkjbs;clkbc"/>
+                <CardsBook link="https://ast.ru/" src="../images/Обложки/Алиса в зазеркаье.jpg" title="Название Книги" contex="hgsajhdgasgclkjsbckjqgsjkcjbkjbcs;lkjbs;clkbc"/>
+                <CardsBook link="https://ast.ru/" src="../images/Обложки/Алиса в зазеркаье.jpg" title="Название Книги" contex="hgsajhdgasgclkjsbckjqgsjkcjbkjbcs;lkjbs;clkbc"/>
+                <CardsBook link="https://ast.ru/" src="../images/Обложки/Алиса в зазеркаье.jpg" title="Название Книги" contex="hgsajhdgasgclkjsbckjqgsjkcjbkjbcs;lkjbs;clkbc"/>
+                <CardsBook link="https://ast.ru/" src="../images/Обложки/Алиса в зазеркаье.jpg" title="Название Книги" contex="hgsajhdgasgclkjsbckjqgsjkcjbkjbcs;lkjbs;clkbc"/>
             </div>
             <button id="toggleButton" className='btn-catalog-more'
                 onClick={toggleContent}

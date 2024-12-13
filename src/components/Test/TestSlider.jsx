@@ -1,5 +1,8 @@
-// import React, { useState } from 'react';
-// import './styles.css'
+import React, { useState } from 'react';
+import './styles.css'
+import { Img } from '../Img/Img';
+import GifComponent from './GifCompon';
+import TestGif from './TestGif';
 // import { TextInBall } from '../TextInBall/TextInBall';
 // import { Img } from '../Img/Img';
 
@@ -63,3 +66,13 @@
 
 //     );
 // };
+
+export const TestSlider = () => {
+
+    return(
+        <div className='test-wrapper'>
+            <TestGif/>
+        </div>
+
+    )
+}

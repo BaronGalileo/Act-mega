@@ -31,7 +31,7 @@ export const CubeSlider = () => {
           shadowScale: 1, // Масштаб тени
         }}
         lazy={true}
-        modules={[EffectCube, Pagination, Autoplay]}
+        modules={[EffectCube, Pagination]}
       >
         <SwiperSlide>
           <div className="cube-slider">

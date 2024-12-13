@@ -208,7 +208,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  font-size: 18px;
+  font-size: 25px;
   padding: 40px 30px;
   border: 10px;
   background-image: url("../../../public/images/шарик-кнопка на веревочке.png");
@@ -245,12 +245,12 @@
   flex-direction: column;    
   align-items: center;       
   justify-content: flex-start; 
-  font-size: 18px;                       
-  padding: 8px 30px; 
+  font-size: 24px;                       
+  padding: 10px 0px; 
   border: 10px;     
   background-image: url('../../../public/images/candy.png'); 
   background-repeat: no-repeat; 
-  background-size: 86% 93%; 
+  background-size: 56% 93%; 
   background-position: center; 
   width: auto;               
   height: auto;              
@@ -260,7 +260,6 @@
   overflow-y: visible;         
   transition: transform 0.3s ease;
   line-height: 2.2;
-  font-size: 12px;
   box-sizing: border-box; 
 }
 
@@ -269,7 +268,7 @@
   flex-direction: column;    
   align-items: center;       
   justify-content: flex-start; 
-  font-size: 18px;                       
+  font-size: 25px;                       
   padding: 12px 27px; 
   border: 10px;     
   background-image: url('../../../public/images/Шарик подвал.png'); 

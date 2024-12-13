@@ -9,7 +9,7 @@ export const Reviews = () => {
 
     return(
         <div className="reviews-wrapper">
-            <Text as='h1' className="title-reviews">Магия страниц глазами мам</Text>
+            <Text  className="title-reviews bond for-h1">МАГИЯ СТРАНИЦ ГЛАЗАМИ МАМ</Text>
             <Img className="background-balls" src="../images/шары с веревочками 1.png"/>
             <Slider/>
         </div>

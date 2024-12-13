@@ -4,43 +4,99 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-color: #87ceeb;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
         .tree-container {
-            display: inline-block;
             position: relative;
-            overflow: hidden;
+            width: 100px;
+            height: 300px;
+            background-color: #8b4513;
+            border-radius: 10px 10px 0 0;
+            animation: shake 2s ease-in-out infinite;
         }
 
-        .tree-image {
-            transition: transform 0.2s ease-in-out;
-        }
-
-        .tree-container:hover .tree-image {
-            animation: sway 0.5s ease-in-out infinite;
-        }
-
-        @keyframes sway {
-            0% {
+        /* Анимация покачивания дерева */
+        @keyframes shake {
+            0%, 100% {
                 transform: rotate(0deg);
             }
             25% {
-                transform: rotate(2deg);
+                transform: rotate(-5deg);
             }
             50% {
-                transform: rotate(0deg);
+                transform: rotate(5deg);
             }
             75% {
-                transform: rotate(-2deg);
+                transform: rotate(-5deg);
+            }
+        }
+
+        .tree-top {
+            position: absolute;
+            top: -50px;
+            left: 20px;
+            width: 60px;
+            height: 60px;
+            background-color: #228b22;
+            border-radius: 50%;
+        }
+
+        .nut {
+            position: absolute;
+            top: 10px;
+            left: 40px;
+            width: 20px;
+            height: 20px;
+            background-color: #8b4513;
+            border-radius: 50%;
+            animation: fall 2s 2s forwards; /* Задержка для падения ореха */
+            pointer-events: none; /* Чтобы орех не мешал взаимодействию */
+        }
+        .hover-block {
+            width: 200px;
+            height: 200px;
+            background-color: #3498db;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: 10px;
+        }
+
+        .hover-block:hover {
+            transform: scale(1.2) translateY(-20px); /* Увеличиваем блок и сдвигаем вверх */
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2); /* Добавляем тень для эффекта подъема */
+        }
+
+        /* Анимация падения ореха */
+        @keyframes fall {
+            0% {
+                top: 10px; /* Начальная позиция ореха */
             }
             100% {
-                transform: rotate(0deg);
+                top: 200px; /* Конечная позиция ореха (земля) */
             }
         }
     </style>
 </head>
 <body>
+    <img src="F:\Act-project\act-mega\public\falesGIF\belka4.gif"/>
 
 <div class="tree-container">
-    <img src="./images/дерево 1 л.png" alt="Дерево" class="tree-image">
+    <div class="tree-top"></div>
+    <div class="nut"></div>
+    <div class="hover-block">
+        <p>Наведи на меня!</p>
+      </div>
 </div>
 
 </body>
+</html>

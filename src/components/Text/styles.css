@@ -7,12 +7,17 @@
     margin: 2px;    
 }
 
+.for-h1 {
+    font-size: 45px;
+    font-stretch: 3px;
+}
+
 .bond {
-   font-family: "Bond"; 
+   font-family: "Bond";
 }
 
 .red-text {
-    color: #EC3837;
+    color: #FF7773;
 }
 
 .left {
@@ -37,8 +42,13 @@
     font-family: "Bold";
 }
 
+.title-book {
+    font-size: 30px;
+    text-align: start;
+}
+
 .book-text {
-    font-size: 14px;
+    font-size: 27px;
 }
 
 .title-reviews {
@@ -47,6 +57,8 @@
     width: 50%;
     font-family: 'Bond';
     color: #FFFFFF;
+    font-size: 60px;
+    letter-spacing: 4px;
 }
 
 .txt-bolus {
@@ -63,11 +75,19 @@
     display: flex;
     width: 60%;
     height: auto;
+    font-size: 20px;
 }
 
 .txt-footer {
     position: absolute;
-    bottom:15vw;
-    width: 60%;
+    font-size: 52px;
+    bottom:12vw;
+    width: 55%;
     z-index: 0;
+}
+
+.cover-txt {
+    margin: 20px;
+    padding: 20px;
+    width: 70%;
 }
